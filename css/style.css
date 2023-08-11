@@ -12,9 +12,31 @@ body {
     background-color: rgba(84, 238, 84, 0.692);
 }
 
+.inicioSesion {
+    margin-left: 58rem;
+    border-radius: 1.5rem;
+    width: 10rem;
+    height: 3rem;
+    margin-top: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.13);
+    font-size: 1.3rem;
+    padding-left: 1.6rem;
+}
+
+.buttonIniciar{
+    color: rgb(7, 7, 7);
+    background-color: rgb(182, 189, 162);
+    margin-right: 2rem;
+    height: 2.5rem;
+    margin-top: 0.8rem;
+    font-size: 1.2rem;
+  }
+
+
 .bienvenida-inicioSesion {
     background-color: rgba(2, 2, 2, 0.705);
     height: 4rem;
+    display: flex;
 }
 
 .bienvenida-inicioSesion p {
@@ -23,6 +45,8 @@ body {
     margin-left: 4rem;
     padding-top: 1rem;
 }
+
+
 
 .imagen-logo {
     height: 5rem;
@@ -49,6 +73,19 @@ body {
     border-radius: 2rem;
 }
 
+.carrusel-ajustes {
+    margin-bottom: 3rem;
+}
+
+.stylecard {
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+    margin-left: 3rem;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    background-color: rgba(207, 207, 207, 0.74);
+}
+
 .botonWhatsApp {
     position: fixed;
     z-index: 999;
@@ -56,13 +93,14 @@ body {
     bottom: 10rem;
     right: 1.5rem;
     transition: ease 0.5s;
-  }
-  .botonWhatsApp:hover {
+}
+
+.botonWhatsApp:hover {
     transform: scale(1.2);
     transition: 0.3s;
-  }
-  .botonWhatsApp img {
+}
+
+.botonWhatsApp img {
     width: 8rem;
     transition: ease 1s;
-  }
-  
+}

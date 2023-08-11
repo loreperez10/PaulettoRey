@@ -14,12 +14,17 @@
   </head>
   <body>
     <header>
-      <div class="bienvenida-inicioSesion">
-        <p>
-          Bienvenido a PAULETTO REY DISTRIBUIDORA. Ingrese a su cuenta para
-          crear un nuevo pedido
-        </p>
-      </div>
+      
+        <div class="bienvenida-inicioSesion">
+          <p>
+            Bienvenido a PAULETTO REY DISTRIBUIDORA. Ingrese a su cuenta para
+            crear un nuevo pedido
+          </p>
+          <input id= "usuario" class="inicioSesion form-control me-2" type="search" placeholder="Tu usuario"
+          v-model="usuario">
+          <button id="boton-ingresar" @click="ingresar" class="btn btn-outline-success buttonIniciar"
+          type="button">Ingresar</button>
+        </div>
 
       <nav class="navbar navbar-expand-lg bg-tertiary navegador">
         <div class="container-fluid">
@@ -77,6 +82,7 @@
                 placeholder="Buscar producto"
                 aria-label="Search"
               />
+              <h1 class="ver-carrito" id="verCarrito">🛒<span id="cantidadCarrito" class="cantidad-carrito"></span></h1>
             </form>
           </div>
         </div>
@@ -124,6 +130,41 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+
+     <section id="misprods" class="row">
+<!-- aqui los productos -->
+     </section>
+
+     <div>
+      <h2 class="titulo-principal">Productos del carrito</h2>
+            <div class="contenedor-carrito">
+                <p id="carrito-vacio" class="carrito-vacio">Tu carrito esta vacío.
+                    <i class="bi bi-emoji-frown"></i></p>
+
+                <div id="carrito-productos" class="carrito-productos disabled">
+
+                    <!-- Productos -->
+                    
+
+                </div>
+
+                <div id="carrito-acciones" class="carrito-acciones disabled">
+                    <div class="carrito-acciones-izquierda">
+                        <button class="carrito-acciones-vaciar" id="botonVaciarCarrito">Vaciar carrito</button>
+                    </div>
+                    <div class="carrito-acciones-derecha">
+                        <div class="carrito-acciones-total">
+                            <p>Total: </p>
+                            <p id="total">600€</p>
+                        </div>
+                        <button class="carrito-acciones-comprar" id="botonComprarAhora">Comprar ahora</button>
+                    </div>
+
+                </div>
+                <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra! <i class="bi bi-emoji-laughing"></i></p>
+
+     </div>
+     
     </main>
     <footer></footer>
     <script
